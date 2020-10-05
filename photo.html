@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reactive App</title>
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="black">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center">Reactive App</a>
+        </div>
+      </div>
+    </nav>
+
+    <section id="content">
+      <div id="container">
+        <div class="row">
+          <div class="col s12 center">
+            <button class="btn waves-effect waves-light" id="userlogout">Logout</button>
+            <button class="btn waves-effect waves-light" id="backtoalbum">Back to Album</button>
+            <button class="btn waves-effect waves-light" id="addphoto">Add Photo</button>
+          </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+           <h3 class="center" id="userID"></h3>
+        </div>
+
+        <div class="row">
+            <table class="striped" id="userDetails">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Photo Name</th>
+                        <th>Photo</th>
+                        <th>Edit Title</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody id="formData"></tbody>
+            </table>
+        </div>
+    </div>
+    </section>
+
+
+   
+  </body>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/photo.js"></script>
+</html>
